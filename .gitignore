@@ -1,0 +1,24 @@
+# ⛔ Do not track environment secrets
+.env
+
+# ⛔ Ignore node_modules folder
+node_modules/
+
+# ⛔ Ignore Firebase key JSON files
+*.json
+
+# ✅ But allow specific JSON files if you ever need to
+!package.json
+!package-lock.json
+
+# ⛔ Ignore log files
+*.log
+
+# ⛔ macOS system file (optional)
+.DS_Store
+
+# Ignore the Firebase key in the config folder
+config/symposium-*.json
+
+# Ignore the Google Cloud key in the root folder
+/synposium-*.json
