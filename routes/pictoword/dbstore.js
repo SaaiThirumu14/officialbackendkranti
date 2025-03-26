@@ -30,7 +30,7 @@ const pictowordRegister = async (data, res) => {
 
     // Step 4: Send confirmation email
     const teamMembers = [member1, member2, member3].filter((m) => m?.name && m?.email);
-    sendMail(teamMembers, event);
+    sendMail(teamMembers,teamName,event);
 
     res.status(200).send("🎉 Pictoword Registered Successfully");
   } catch (err) {
