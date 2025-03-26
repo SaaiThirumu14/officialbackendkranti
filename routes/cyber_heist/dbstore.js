@@ -54,7 +54,7 @@ const cyberHeistRegister = async (data, res) => {
 
     // Step 4: Send Email to members
     const teamMembers = [member1, member2].filter((m) => m.name && m.email);
-    sendMail(teamMembers, member1.collegeName, event);
+    sendMail(teamMembers,teamName, event);
 
     // Done!
     res.status(200).send("🎉 Cyber Heist Registered Successfully");
