@@ -41,7 +41,7 @@ const interstellarHarmonicsRegister = async (data, res) => {
 
     // Step 4: Send confirmation email
     const teamMembers = [member1, member2].filter(m => m?.name && m?.email);
-    sendMail(teamMembers, member1.collegeName || "", event);
+    sendMail(teamMembers,teamName, event);
 
     res.status(200).send("🎶 Interstellar Harmonics Registered Successfully");
   } catch (error) {
