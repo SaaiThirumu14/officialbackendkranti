@@ -41,7 +41,7 @@ const timelessTruthsRegister = async (data, res) => {
     const teamMembers = [member1, member2, member3, member4].filter(
       (m) => m?.name && m?.email
     );
-    sendMail(teamName,teamMembers, event);
+    sendMail(teamMembers,teamName,event);
 
     res.status(200).send("🎉 Timeless Truths Registered Successfully");
   } catch (err) {
