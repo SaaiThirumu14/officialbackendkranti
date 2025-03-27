@@ -14,7 +14,7 @@ router.post("/", async (req, res) => {
       .get();
 
     if (!snapshot.empty) {
-      return res.status(409).json({ message: "Team name already exists" });
+      return res.status(201).json({ message: "Team name already exists" });
     }
 
     // Proceed to register
