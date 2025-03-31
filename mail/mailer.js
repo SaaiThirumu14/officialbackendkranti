@@ -16,17 +16,21 @@ const sendMail = async (members, teamName, eventName) => {
         to: member.email,
         subject: `✅ ${eventName} Registration Confirmation – Team ${teamName}`,
         html: `
-          <p>Dear ${member.name},</p>
+<p>Dear ${member.name},</p>
 
-          <p>We are thrilled to confirm your registration for the event <strong>${eventName}</strong> as part of <strong>Team ${teamName}</strong> from <strong>${member.collegeName}</strong>.</p>
+<p>We are thrilled to confirm your registration for the event <strong>${eventName}</strong> as part of <strong>Team ${teamName}</strong> from <strong>${member.collegeName}</strong>.</p>
 
-          <p>Thank you for your enthusiasm! We're excited to have you join us and hope this experience proves to be insightful and memorable.</p>
+<p>Thank you for your enthusiasm! We're excited to have you join us and hope this experience proves to be insightful and memorable.</p>
 
-          <p>If you have any questions or need any assistance, feel free to reach out to us anytime.</p>
+<p>If you have any questions or need any assistance, feel free to reach out to us anytime.</p>
 
-          <br/>
-          <p>Wishing you all the best,</p>
-          <p><strong>Team Kranti</strong></p>
+<p>Join our WhatsApp community for updates and discussions: 
+<a href="https://chat.whatsapp.com/BaYlSX0b4yEGB3oXkLPaDk" target="_blank">Click here</a></p>
+
+<br/>
+<p>Wishing you all the best,</p>
+<p><strong>Team Kranti</strong></p>
+
         `,
       };
 
