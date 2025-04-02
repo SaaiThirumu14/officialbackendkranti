@@ -12,6 +12,7 @@ app.use(express.json());
 app.use('/cyber_heist', require('./routes/cyber_heist/controller.js'));
 app.use('/chrono_bid',require('./routes/chrono_bid/controller.js'));
 app.use('/escape_paradox', require('./routes/escape_paradox/controller.js'));
+app.use('/Battle', require('./routes/BattleofBytes/controller.js'));
 app.use('/lyric', require('./routes/lyric_quest/controller.js'));
 app.use('/picto', require('./routes/pictoword/controller'));
 app.use('/timeless_truth', require('./routes/Timeless_truth/controller'));
